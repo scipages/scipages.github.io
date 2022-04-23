@@ -38,7 +38,7 @@ export default function Showcase() {
             </div>
 
             <div className="row">
-              <div className="col col--4">
+              <div className="col">
                 ...
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function Showcase() {
             </div>
 
             <div className="row">
-              <div className="col col--4">
+              <div className="col">
                 ...
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function Showcase() {
             </div>
 
             <div className="row">
-              <div className="col col--4">
+              <div className="col">
                 ...
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function Showcase() {
             </div>
 
             <div className="row">
-              <div className="col col--4">
+              <div className="col">
                 ...
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Showcase() {
             </div>
 
             <div className="row">
-              <div className="col col--4">
+              <div className="col">
                 ...
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function Showcase() {
             </div>
 
             <div className="row">
-              <div className="col col--4">
+              <div className="col">
                 ...
               </div>
             </div>
