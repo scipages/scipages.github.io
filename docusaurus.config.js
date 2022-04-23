@@ -86,6 +86,11 @@ module.exports = {
           position: 'right'
         },
         {
+          to: '/showcase',
+          label: 'Showcase',
+          position: 'right'
+        },
+        {
           to: '/download',
           label: 'Download',
           position: 'right'
