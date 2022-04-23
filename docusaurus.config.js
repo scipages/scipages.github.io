@@ -14,6 +14,10 @@ module.exports = {
   projectName: 'https://scipages.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
+  plugins: [
+    'docusaurus-plugin-sass'
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',
