@@ -6,6 +6,8 @@ currentRelease: 0.0.1
 import clsx from 'clsx';
 import styles from './index.module.scss';
 
+import OSList from '@site/src/components/OSList'
+
 <div className={styles.download}>
   <div className={styles.header}>
     <h1>
@@ -17,15 +19,38 @@ import styles from './index.module.scss';
   </div>
 </div>
 
-| Platform                                                              | Checksum |
-|-----------------------------------------------------------------------|----------|
-| [Download for Windows](https://github.com/scipages/scipages/releases) |          |
-| [Download for Linux](https://github.com/scipages/scipages/releases)   |          |
-| [Download for macOS](https://github.com/scipages/scipages/releases)   |          |
+<OSList content={{
+  windows: { title: 'Download', title2: 'for Windows', link: 'https://github.com/scipages/scipages/releases'},
+  linux: { title: 'Download', title2: 'for Linux', link: 'https://github.com/scipages/scipages/releases'},
+  macos: { title: 'Download', title2: 'for macOS', link: 'https://github.com/scipages/scipages/releases'}
+}} />
 
-<>Current release: <b>{frontMatter.currentRelease}</b></>
+[//]: # (<OSList content={{)
+[//]: # (  windows: { title: 'Download', title2: 'for Windows', link: 'https://github.com/scipages/scipages/releases/download/' + frontMatter.currentRelease + '/scipages_' + frontMatter.currentRelease + '_win_setup.exe'},)
+[//]: # (  linux: { title: 'Download', title2: 'for Linux', link: 'https://github.com/scipages/scipages/releases/download/' + frontMatter.currentRelease + '/scipages_' + frontMatter.currentRelease + '_linux.deb'},)
+[//]: # (  macos: { title: 'Download', title2: 'for macOS', link: 'https://github.com/scipages/scipages/releases/download/' + frontMatter.currentRelease + '/scipages_' + frontMatter.currentRelease + '_macos.dmg'})
+[//]: # (}} />)
+
+[//]: # (| Platform                                                              | Checksum |)
+[//]: # (|-----------------------------------------------------------------------|----------|)
+[//]: # (| [Download for Windows]&#40;https://github.com/scipages/scipages/releases&#41; |          |)
+[//]: # (| [Download for Linux]&#40;https://github.com/scipages/scipages/releases&#41;   |          |)
+[//]: # (| [Download for macOS]&#40;https://github.com/scipages/scipages/releases&#41;   |          |)
+
+<p>Current release: <b>{frontMatter.currentRelease}</b></p>
 
 To download older releases, visit the [Releases Page](https://github.com/scipages/scipages/releases).
+
+<p>
+  SHA256 checksums for the latest release are available
+  {' '}
+  <a
+    href={'https://github.com/scipages/scipages/releases/download/' + frontMatter.currentRelease + '/sha256checksums.txt'}
+    target="_blank"
+  >
+    here
+  </a>.
+</p>
 
 ## Windows Installation Instructions
 

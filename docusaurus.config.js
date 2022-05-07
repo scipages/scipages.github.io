@@ -18,11 +18,17 @@ module.exports = {
     'docusaurus-plugin-sass'
   ],
 
+  i18n: {
+    defaultLocale: 'en-GB',
+    locales: ['en-GB']
+  },
+
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
+          showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/scipages/scipages.github.io/edit/main',
@@ -56,7 +62,6 @@ module.exports = {
     //     '⭐️ If you like SciPages, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/scipages/scipages">GitHub</a>! ⭐️',
     // },
     metadata: [{name: 'keywords', content: 'scipages, academic websites, static site generator, cms'}],
-    hideableSidebar: true,
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
@@ -66,6 +71,11 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    docs: {
+      sidebar: {
+        hideable: true
+      }
+    },
     navbar: {
       title: 'SciPages',
       logo: {
@@ -74,6 +84,11 @@ module.exports = {
       },
       hideOnScroll: true,
       items: [
+        // {
+        //   to: '/about',
+        //   label: 'About',
+        //   position: 'right'
+        // },
         {
           type: 'doc',
           docId: 'getting-started/intro',

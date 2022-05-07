@@ -1,9 +1,7 @@
-# Introduction
-
 ## What is SciPages?
 
 // ToDo
 
-## Why Scipages?
+## The SciPages Architecture
 
 // ToDo
